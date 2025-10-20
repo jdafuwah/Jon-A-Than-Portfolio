@@ -1,0 +1,29 @@
+/* center the hero content using Tailwind utility classes fallback */
+.hero-center-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Small utility to ensure images are not too large on very small screens */
+.img-max-sm {
+  max-width: 100%;
+  height: auto;
+}
+
+/* A couple of example components combining Tailwind utilities as fallback */
+.btn-primary {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Dark mode token example (used by main.js) */
+:root.dark-mode {
+  --tw-bg-opacity: 1;
+  background-color: rgba(26,26,26,var(--tw-bg-opacity));
+  color: #f5f5f5;
+}
